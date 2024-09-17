@@ -2,7 +2,9 @@ import java.util.Arrays;
 
 public class EratosthenesPrimeSieve implements PrimeSieve{
     private int obergrenze;
+
     private boolean[] isPrimeArray;
+
 
     public EratosthenesPrimeSieve(int obergrenze) {
         this.obergrenze = obergrenze;
@@ -12,6 +14,7 @@ public class EratosthenesPrimeSieve implements PrimeSieve{
         }
         sieve();
     }
+
 
     public void sieve() {
         isPrimeArray[0] = false;
@@ -23,8 +26,6 @@ public class EratosthenesPrimeSieve implements PrimeSieve{
                 }
             }
         }
-
-
     }
 
 
@@ -32,6 +33,7 @@ public class EratosthenesPrimeSieve implements PrimeSieve{
     public boolean isPrime(int p) {
         return isPrimeArray[p];
     }
+
 
     @Override
     public void printPrimes() {
@@ -41,4 +43,5 @@ public class EratosthenesPrimeSieve implements PrimeSieve{
             }
         }
     }
+
 }
